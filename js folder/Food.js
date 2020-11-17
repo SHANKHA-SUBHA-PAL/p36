@@ -6,7 +6,7 @@ constructor(){
 getFoodStock(){
 var foodStock = database.ref("Food");
 foodStock.on("value",function(data){
-foodStock =
+foodStock = data.val();
 
 })
 
